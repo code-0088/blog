@@ -3,3 +3,35 @@
     padding: 20px 0;
     text-align: center;
   }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  .indicadores-container {
+    overflow: hidden;
+  }
+  
+  .indicadores-bar {
+    display: inline-block;
+    white-space: nowrap;
+    animation: desplazar 15s linear infinite; /* Velocidad y dirección de desplazamiento */
+  }
+  
+  .indicadores-bar span {
+    margin-right: 20px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  @keyframes desplazar {
+    0% {
+      transform: translateX(275%); /* Comienza fuera del contenedor */
+    }
+    100% {
+      transform: translateX(-100%); /* Se desplaza completamente hacia la izquierda */
+    }
+  }
+  

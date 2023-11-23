@@ -35,6 +35,14 @@
 </nav>
 <!-- /Nav -->
 <div class="contenido">
+  <div class="indicadores-bar">
+    <span>UF: <span id="ufValue"></span></span>
+    <span>Dólar: <span id="dolarValue"></span></span>
+    <span>Euro: <span id="euroValue"></span></span>
+    <span>UTM: <span id="utmValue"></span></span>
+  </div>
+
+
     {% block content %}
 
     {% endblock %}
@@ -47,7 +55,7 @@
   </div>
 </footer>
 <!-- /Footer -->
-
+<script src="{% static 'core/js/apiDolar.js' %}"></script>
 <!-- Bootstrap JS -->
 <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
 </body>

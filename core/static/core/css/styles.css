@@ -17,7 +17,7 @@
   .indicadores-bar {
     display: inline-block;
     white-space: nowrap;
-    animation: desplazar 15s linear infinite; /* Velocidad y dirección de desplazamiento */
+    animation: desplazar 15s linear infinite; 
   }
   
   .indicadores-bar span {
@@ -28,10 +28,18 @@
   
   @keyframes desplazar {
     0% {
-      transform: translateX(275%); /* Comienza fuera del contenedor */
+      transform: translateX(275%); 
     }
     100% {
-      transform: translateX(-100%); /* Se desplaza completamente hacia la izquierda */
+      transform: translateX(-100%); 
     }
   }
+  .carousel-caption {
+    position: absolute;
+    top: 250px; 
+    left: 50px; 
+    right: 50px; 
+    text-align: left; 
+    color: white; 
+    padding: 20px; 
   
